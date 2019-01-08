@@ -1,0 +1,25 @@
+
+.milestones
+{
+	width: 100%;
+	margin-top: 93px;
+}
+.milestone
+{
+	width: 25%;
+	float: left;
+}
+.milestone_counter
+{
+	font-size: 36px;
+	font-weight: 800;
+	color: #100f3a;
+	margin-top: 6px;
+}
+.milestone_text
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #838383;
+	margin-top: -1px;
+}

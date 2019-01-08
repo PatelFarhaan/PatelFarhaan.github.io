@@ -34,6 +34,11 @@
 		bottom: -80px;
 		z-index: 10;
 	}
+	.loader_container
+	{
+		width: 50%;
+		margin-bottom: 60px;
+	}
 }
 
 /************
@@ -70,7 +75,11 @@
 
 @media only screen and (max-width: 1380px)
 {
-	
+	.milestone
+	{
+		width: 50%;
+		margin-bottom: 60px;
+	}
 }
 
 /************
@@ -132,9 +141,9 @@
 	{
 		font-size: 24px;
 	}
-	.main_content_scroll
+	.milestones
 	{
-		padding-right: 30px;
+		padding-bottom: 30px;
 	}
 }
 
@@ -165,10 +174,6 @@
 	.general_info_content
 	{
 		padding-left: 50px;
-	}
-	.main_content_scroll
-	{
-		padding-bottom: 60px;
 	}
 }
 
@@ -235,17 +240,11 @@
 	}
 	.main_content_scroll
 	{
-		padding-right: 0px;
+		padding-right: 30px;
 	}
-	.exp_time
+	.milestone
 	{
-		width: auto;
-		text-align: left;
-	}
-	.exp_content
-	{
-		padding-left: 0px;
-		margin-top: 45px;
+		width: 100%;
 	}
 }
 
@@ -305,7 +304,7 @@
 	.main_content
 	{
 		padding-left: 30px;
-		padding-right: 0px;
+		padding-right: 30px;
 	}
 	.main_content_scroll
 	{
