@@ -184,10 +184,10 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
-		loop: false,
-		center: false,
-		rewind: false,
+		items: 4,
+		loop: true,
+		right: true,
+		rewind: true,
 
 		mouseDrag: true,
 		touchDrag: true,
@@ -205,7 +205,7 @@
 		rtl: false,
 
 		smartSpeed: 250,
-		fluidSpeed: false,
+		fluidSpeed: true,
 		dragEndSpeed: false,
 
 		responsive: {},
