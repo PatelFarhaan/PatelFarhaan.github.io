@@ -103,152 +103,74 @@
   list-style-type: circle;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins')
-
-.body
+.testimonials-farees
 {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #f5f5f5;
-  font-family: 'Poppins', sans-serif;
+padding: 40px 0;
+background:
+color: #434343;
+text-align: center;
 }
 
-.container-farees{
-  width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gird-gap: 20px;
-  box-sizing: border-box;
-  padding: 20px;
+.inner-farees{
+max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 0 20px;
 }
 
-.container-farees .box-farees {
-  position: relative;
-  padding: 80px 40px 40px;
-  transition: 0.5s;
-  text-align: center;
-  background: #fff;
+.border-farees{
+width: 160px;
+height: 5px;
+background: #6ab04c;
+margin: 26px auto;
 }
 
-.container-farees .box-farees:hover {
-  background: #007bff;
+.row-farees{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
-
-.container-farees .box-farees p {
-  margin: 0;
-  padding: 0;
-  transition: 0.5s;
+.column-farees{
+flex: 33.33%;
+max-width: 33.33%;
+box-sizing: border-box;
+padding: 15px;
 }
 
-.container-farees .box-farees h4 {
-  margin: 20px 0 0;
-  padding: 0;
-  transition: 0.5s;
-  font-size: 18px;
-  font-weight: 700;
-  color: #007bff;
-  line-height: 20px;
-  text-transform: uppercase;
+.testimonial-farees{
+background: #fff;
+padding: 30px;
+
 }
 
-.container-farees .box-farees span {
-  font-weight: 600;
-  font-size: 14px;
-  color: #c5c5c5;
-  transition: 0.5s;
+.testimonial-farees img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
 }
 
-.container-farees .box-farees:hover p,
-.container-farees .box-farees:hover h4,
-.container-farees .box-farees:hover h4 span
-{
-  color: #fff;
+.name-farees{
+font-size: 20px;
+text-transform: uppercase;
+margin: 20px 0;
 }
 
-.container-farees .box-farees .imgBox-farees {
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
+.name-farees .span{
+font-size: 10px;
 }
 
-.container-farees .box-farees::before
-{
-  content: '';
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  width: 80px;
-  height: 80px;
-  background: url(images/quotes.png);
-  background-size: cover;
-  opacity: 0.05;
-  pointer-events: none;
-  transition: 0.5s;
+.testimonials-farees .testimonial-farees:hover {
+background: #007bff;
 }
 
 
-.container-farees .box-farees:hover::before
-{
-  transform: translateY(-60px);
-  opacity: 1;
+@media screen and (max-width:600px){
+.column-farees{
+  flex: 100%;
+  max-width: 100%;
 }
-
-.container-farees .box-farees::after
-{
-  content: '';
-  position: absolute;
-  bottom: 20px;
-  left: 40px;
-  width: 80px;
-  height: 80px;
-  background: url(images/quotes.png);
-  background-size: cover;
-  opacity: 0.05;
-  pointer-events: none;
-  transition: 0.5s;
-  transform: rotate(180deg) translateY(0px);
 }
-
-
-.container-farees .box-farees:hover::after
-{
-  transform: rotate(180deg) translateY(-60px);
-  opacity: 1;
-}
-
-@media(max-width: 768px)
-{
-  .container-farees .box-farees
-  {
-    margin-top: 80px;
-
-  }
-}
-
 
 
 
@@ -890,53 +812,65 @@ Proficient with the various analytical tools, presentation software, and possess
 
 
 <br>
+    <div class="container">
+
 
     <div class="section-title text-center">
       <h2>Testimonials</h2>
     </div>
+    <div class="testimonials-farees">
+      <div class="inner-farees">
 
-    <div class="container-farees">
-			<div class="box-farees">
-				<div class="imgBox-farees">
-					<img src="images/smith.jpg">
-				</div>
-        <p>Farhaan has been an outstanding employee who on a daily basis goes “above and beyond” in delivering quality work and continuously exceeds the performance standards for his position of a Machine Learning Engineer.</p>
-				<h4>Parth Waidya <br>
-					<span>Co-founder, Technical Director</span>
-				 </h4>
-			</div>
-
-			<div class="box-farees">
-				<div class="imgBox-farees">
-					<img src="img1.jpg">
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h4>Farhaan Patel <br>
-					<span>Creative Director</span>
-				 </h4>
-			</div>
+        <div class="row-farees">
+          <div class="column-farees">
+            <div class="testimonial-farees">
+              <img src="images/quotes.png">
+              <div class="name-farees">Farhaan Patel <br> <span>asd kasdj</span></div>
 
 
-			<div class="box-farees">
-				<div class="imgBox-farees">
-					<img src="img1.jpg">
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h4>Farhaan Patel <br>
-					<span>Creative Director</span>
-				 </h4>
-			</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		</div>
+              </div>
+
+            </div>
 
 
 
+            <div class="column-farees">
+              <div class="testimonial-farees">
+                <img src="images/quotes.png">
+                <div class="name-farees">Farhaan Patel</div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                </div>
+
+              </div>
 
 
+
+                <div class="column-farees">
+                  <div class="testimonial-farees">
+                    <img src="images/quotes.png">
+                    <div class="name-farees">Farhaan Patel</div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    </div>
+
+                  </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </div>
-
-
-
 
 
 
