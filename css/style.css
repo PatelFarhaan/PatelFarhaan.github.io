@@ -149,11 +149,14 @@ p {
   box-shadow: none;
   outline: 0 none;
 }
-
+.paddding_techinalskill{
+  padding-top: 6%;
+}
+/*
 .paddsection {
   padding-top: 90px;
   padding-bottom: 90px;
-}
+}*/
 
 .paddsections {
   padding-top: 90px;
@@ -358,6 +361,7 @@ nav ul li a {
 
 
 .services-carousel  .owl-stage-outer {
+  padding-top: 12%;
   overflow: hidden;
 }
 

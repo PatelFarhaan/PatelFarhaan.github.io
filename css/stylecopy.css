@@ -371,7 +371,10 @@ body.offcanvas {
 .no-gutters {
   margin: 0;
   padding: 0; }
-
+.padding_work{
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
 .colorlib-experience,
 .colorlib-skills,
 .colorlib-education,
@@ -380,8 +383,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  /*padding-top: 4em;
+  padding-bottom: 9em;*/
   clear: both;
   width: 100%;
   display: block; }
