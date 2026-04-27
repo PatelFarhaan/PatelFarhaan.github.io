@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>OG Image</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+<style>
+    :root {
+        --paper: #f7f2e8;
+        --soft: #eee6d8;
+        --ink: #111827;
+        --ink-soft: #1f2937;
+        --muted: #2f3848;
+        --line: #d8cfbe;
+        --blue: #1746a2;
+        --orange: #c2410c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+    body {
+        background: var(--paper);
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--ink);
+        display: grid;
+        grid-template-columns: 1.25fr .9fr;
+        gap: 48px;
+        align-items: center;
+        padding: 50px 64px;
+    }
+    .eyebrow {
+        font-family: 'IBM Plex Mono', monospace;
+        text-transform: uppercase; letter-spacing: .16em;
+        font-size: 14px; color: var(--blue); font-weight: 700;
+        display: inline-flex; align-items: center; gap: 14px;
+        margin-bottom: 28px;
+    }
+    .eyebrow::before { content: ''; width: 36px; height: 1.5px; background: var(--blue); }
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: .94;
+        letter-spacing: -.04em;
+        margin-bottom: 24px;
+        color: var(--ink);
+    }
+    h1 em { color: var(--orange); font-weight: 700; font-style: italic; }
+    h1 .stroke { color: var(--blue); font-weight: 800; font-style: normal; }
+    .lede {
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--muted);
+        max-width: 540px;
+        margin-bottom: 22px;
+    }
+    .lede strong { color: var(--ink); font-weight: 700; }
+    .name-strip {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 13px;
+        color: var(--muted);
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .name-strip b { color: var(--ink); font-weight: 800; }
+
+    .portrait {
+        background: var(--soft);
+        border: 1.5px solid var(--ink);
+        box-shadow: 12px 12px 0 var(--ink);
+        padding: 28px 30px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .portrait .mono {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 12px;
+        color: var(--muted);
+        letter-spacing: .06em;
+        font-weight: 500;
+    }
+    .initials {
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        font-size: 84px;
+        line-height: .9;
+        letter-spacing: -.04em;
+        color: var(--ink);
+    }
+    .initials em {
+        color: var(--orange);
+        font-style: italic;
+        font-weight: 500;
+    }
+    .known strong {
+        color: var(--ink);
+        font-weight: 700;
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    .known .mono {
+        color: var(--blue);
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div class="eyebrow">Senior DevOps · Platform Engineer</div>
+        <h1>
+            Building <em>platforms</em><br>
+            for the <span class="stroke">3,300</span><br>
+            engineers who<br>
+            ship to <em>120M</em>.
+        </h1>
+        <p class="lede">
+            <strong>Mohammed Farhaan Patel</strong> — building cloud-native infrastructure on
+            <strong>AWS, GCP & Azure</strong> that powers Roku's streaming services.
+        </p>
+        <div class="name-strip">patelfarhaan.github.io · <b>Boston, MA</b></div>
+    </div>
+    <aside class="portrait">
+        <div class="mono">BOSTON, MA · 2021–PRESENT</div>
+        <div class="initials">Farhaan<br/><em>Patel</em></div>
+        <div class="known">
+            <strong>Known for</strong>
+            <span class="mono">Platform Engineering · GitOps · Kubernetes at Scale · Cloud Cost Optimization</span>
+        </div>
+    </aside>
+</body>
+</html>
