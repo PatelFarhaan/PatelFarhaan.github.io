@@ -295,6 +295,43 @@
             line-height: 1.85; letter-spacing: .02em;
         }
 
+        /* ─── OPEN SOURCE ─── */
+        .oss-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+            border: 1.5px solid var(--ink);
+        }
+        .oss-card {
+            padding: 32px 28px;
+            border-right: 1px solid var(--line);
+            background: var(--card);
+            display: flex; flex-direction: column;
+        }
+        .oss-card:last-child { border-right: none; }
+        .oss-num { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--blue); margin-bottom: 18px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+        .oss-title {
+            font-family: 'Playfair Display', serif; font-weight: 500;
+            font-size: clamp(28px, 3vw, 36px); line-height: 1;
+            margin: 0 0 6px; letter-spacing: -.03em; color: var(--ink);
+        }
+        .oss-title em { color: var(--orange); font-weight: 500; }
+        .oss-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--muted); margin-bottom: 18px; text-transform: uppercase; letter-spacing: .09em; }
+        .oss-body { font-size: 15px; line-height: 1.65; margin-bottom: 22px; color: var(--ink-soft); }
+        .oss-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+        .oss-tag {
+            font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+            padding: 3px 10px; border: 1px solid var(--blue); color: var(--blue);
+            letter-spacing: .06em; font-weight: 600;
+        }
+        .oss-links { margin-top: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 16px; border-top: 1px solid var(--line); }
+        .oss-link {
+            font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+            color: var(--ink); font-weight: 700; letter-spacing: .04em;
+            display: flex; align-items: center; justify-content: space-between;
+            text-transform: uppercase; transition: color .15s;
+        }
+        .oss-link:hover { color: var(--orange); }
+        .oss-link span:last-child { font-size: 14px; }
+
         /* ─── CONTACT ─── */
         .contact-block {
             padding: 84px 0;
@@ -335,6 +372,9 @@
             .exp-loc { text-align: left; }
             .case-grid { grid-template-columns: 1fr; }
             .case { border-right: none; }
+            .oss-grid { grid-template-columns: 1fr; }
+            .oss-card { border-right: none; border-bottom: 1px solid var(--line); }
+            .oss-card:last-child { border-bottom: none; }
             .toolkit-grid { grid-template-columns: 1fr; }
             .tool-block:nth-child(odd) { border-right: none; padding-right: 0; }
             .tool-block:nth-child(even) { padding-left: 0; }
@@ -363,6 +403,7 @@
             <a href="#experience">Experience</a>
             <a href="#cases">Case Files</a>
             <a href="#toolkit">Toolkit</a>
+            <a href="#opensource">Open Source</a>
             <a href="#contact" class="pill">Contact</a>
         </div>
     </div>
@@ -687,6 +728,76 @@
             <div class="tool-name">Build & Package</div>
             <div class="tool-list">uv · Poetry · Bun · pnpm · Turbo · Vite</div>
         </div>
+    </div>
+</section>
+
+<!-- ─────── SECTION IV · OPEN SOURCE ─────── -->
+<section class="section-numbered wrap" id="opensource">
+    <div class="section-head">
+        <div>
+            <div class="section-kicker">Section IV</div>
+            <div class="section-num">04</div>
+        </div>
+        <h2 class="section-title">Open <em>source</em>, shipped publicly.</h2>
+    </div>
+
+    <div class="oss-grid">
+        <article class="oss-card">
+            <div class="oss-num">PROJECT №01 · AUTH</div>
+            <h3 class="oss-title">Auth <em>Gate</em></h3>
+            <div class="oss-meta">OAuth Sidecar · Python · Helm · Docker</div>
+            <p class="oss-body">
+                Lightweight, self-hosted OAuth login service you can drop in front of any app. Deploy as a
+                sidecar and get auth in minutes — no rewriting your app, no vendor lock-in. Ships with an
+                admin panel, Helm chart, and ~50MB Docker image.
+            </p>
+            <div class="oss-tags">
+                <span class="oss-tag">PYTHON</span><span class="oss-tag">OAUTH</span>
+                <span class="oss-tag">HELM</span><span class="oss-tag">DOCKER</span>
+            </div>
+            <div class="oss-links">
+                <a class="oss-link" href="https://github.com/gatesuite/authgate" target="_blank" rel="noopener"><span>github.com/gatesuite/authgate</span><span>↗</span></a>
+                <a class="oss-link" href="https://gatesuite.github.io/authgate/" target="_blank" rel="noopener"><span>Live Docs</span><span>↗</span></a>
+            </div>
+        </article>
+
+        <article class="oss-card">
+            <div class="oss-num">PROJECT №02 · AI INFRA</div>
+            <h3 class="oss-title">MCP <em>Gate</em></h3>
+            <div class="oss-meta">API Key Service for MCP · Python · Helm · Docker</div>
+            <p class="oss-body">
+                Ultra-fast API key lifecycle and verification service for MCP servers and AI agents. Sits
+                alongside your human auth provider and handles the machine side — issuing, scoping, verifying,
+                and revoking API keys for Claude Desktop, Cursor, and custom MCP clients.
+            </p>
+            <div class="oss-tags">
+                <span class="oss-tag">PYTHON</span><span class="oss-tag">MCP</span>
+                <span class="oss-tag">API_KEYS</span><span class="oss-tag">HELM</span>
+            </div>
+            <div class="oss-links">
+                <a class="oss-link" href="https://github.com/gatesuite/mcpgate" target="_blank" rel="noopener"><span>github.com/gatesuite/mcpgate</span><span>↗</span></a>
+                <a class="oss-link" href="https://gatesuite.github.io/mcpgate/" target="_blank" rel="noopener"><span>Live Docs</span><span>↗</span></a>
+            </div>
+        </article>
+
+        <article class="oss-card">
+            <div class="oss-num">PROJECT №03 · DEVELOPER TOOLS</div>
+            <h3 class="oss-title">GL <em>Trace</em></h3>
+            <div class="oss-meta">GitLab Pipeline Log Explorer · Python · CLI · Homebrew</div>
+            <p class="oss-body">
+                Terminal-first GitLab pipeline log explorer for humans and AI agents. Pulls job traces straight
+                into your terminal with interactive stage/job pickers — or hand it to an MCP-aware agent to
+                triage failures end-to-end. Ships via Homebrew tap.
+            </p>
+            <div class="oss-tags">
+                <span class="oss-tag">PYTHON</span><span class="oss-tag">CLI</span>
+                <span class="oss-tag">GITLAB_API</span><span class="oss-tag">HOMEBREW</span>
+            </div>
+            <div class="oss-links">
+                <a class="oss-link" href="https://github.com/glsuite/gltrace" target="_blank" rel="noopener"><span>github.com/glsuite/gltrace</span><span>↗</span></a>
+                <a class="oss-link" href="https://glsuite.github.io/gltrace/" target="_blank" rel="noopener"><span>Live Docs</span><span>↗</span></a>
+            </div>
+        </article>
     </div>
 </section>
 
